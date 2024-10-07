@@ -1,13 +1,215 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+        margin:0;
+        padding:0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.main-upper{
+                padding:10% 0 0 12%;
+                display: inline-flex;
+                justify-content: center;
+                gap: 50px;
 }
+.sect2{
+                padding-top:20px;
+}
+h1{
+        font-size: 40px;
+        font-weight: 550;
+        font-family: Arial, Helvetica, sans-serif;
+        
+}
+
+.sub-title {
+        font-size: 25px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+ button{
+                background-color: #2da7db;
+                color: white;
+                padding: 10px 5px 10px 5px;
+                box-sizing: border-box;
+                border: none;
+                font-size: 25px;
+                cursor: pointer;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                width:100%;
+                margin-bottom: 20px;
+
+ }
+
+ button:hover{
+                background-color: #61BEE5;
+ }
+
+
+ .anchor{
+                text-align: center;
+                
+ }
+
+ a{
+        color: #2da7db;
+        font-size: 25px;
+ }
+
+ .container{
+                width: 100%;
+                padding:5% 5% 5% 10%;
+                box-sizing:border-box;
+                display:inline-flex;
+                color:white;
+                background-color: black;
+ }
+ul{
+        width: 50%;                
+}
+ li{
+        list-style: none;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 30px;
+ }
+
+ .career::before {
+    content: ""; /* Add content property for the pseudo-element to display */
+    width: 150px;
+    height: 15px; /* Add height if you want it to be visible */
+    border: 1px solid transparent;
+    background-color: #ED6A56;
+    display: inline-block; /* Use inline-block to allow width and height */
+    margin-right:12px;
+}
+
+.career {
+                color: #ED6A56;
+}
+.money::before {
+        content: ""; /* Add content property for the pseudo-element to display */
+        width: 150px;
+        height: 15px; /* Add height if you want it to be visible */
+        border: 1px solid transparent;
+        background-color: #F09B36;
+        display: inline-block; /* Use inline-block to allow width and height */
+        margin-right:12px;
+
+    }
+    .money{
+                color:#F09B36;
+    }
+.health::before {
+        content: ""; /* Add content property for the pseudo-element to display */
+        width: 150px;
+        height: 15px; /* Add height if you want it to be visible */
+        border: 1px solid transparent;
+        background-color: #FFC74E;
+        display: inline-block; /* Use inline-block to allow width and height */
+        margin-right:12px;
+
+    }
+.health {
+        color: #FFC74E;
+}
+
+    .rel::before {
+        content: ""; /* Add content property for the pseudo-element to display */
+        width: 150px;
+        height: 15px; /* Add height if you want it to be visible */
+        border: 1px solid transparent;
+        background-color: #A0B470;
+        display: inline-block; /* Use inline-block to allow width and height */
+        margin-right:12px;
+
+    }
+
+    .rel{
+        color: #A0B470;
+    }
+
+    .per::before {
+        content: ""; /* Add content property for the pseudo-element to display */
+        width: 150px;
+        height: 15px; /* Add height if you want it to be visible */
+        border: 1px solid transparent;
+        background-color: #6E9E75;
+        display: inline-block; /* Use inline-block to allow width and height */
+        margin-right:12px;
+
+    }
+
+    .per {
+                color:#6E9E75;;
+    }
+
+    .fun::before {
+        content: ""; /* Add content property for the pseudo-element to display */
+        width: 150px;
+        height: 15px; /* Add height if you want it to be visible */
+        border: 1px solid transparent;
+        background-color: #73CCE4;
+        display: inline-block; /* Use inline-block to allow width and height */
+        margin-right:12px;
+
+    }
+
+    .fun {
+        color: #73CCE4;
+    }
+
+    .phy::before {
+        content: ""; /* Add content property for the pseudo-element to display */
+        width: 150px;
+        height: 15px; /* Add height if you want it to be visible */
+        border: 1px solid transparent;
+        background-color: #869ACF;
+        display: inline-block; /* Use inline-block to allow width and height */
+        margin-right:12px;
+
+    }
+    
+    .phy{
+                color:#869ACF;
+    }
+    
+    .sp::before {
+        content: ""; /* Add content property for the pseudo-element to display */
+        width: 150px;
+        height: 15px; /* Add height if you want it to be visible */
+        border: 1px solid transparent;
+        background-color: #895881;
+        display: inline-block; /* Use inline-block to allow width and height */
+        margin-right:12px;
+
+    }
+    .sp{
+                color: #895881;
+    }
+
+    .side-note{
+                width: 43%;
+    }
+
+    p{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    footer{
+                width: 100%;
+                text-align: center;
+                background-color:#29ABE2;
+                padding: 10px;
+                box-sizing: border-box;
+    }
+
+    footer a{
+                color:white;
+    }
+    
+    
+    
