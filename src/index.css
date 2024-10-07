@@ -48,6 +48,8 @@ h1{
 
  .anchor{
                 text-align: center;
+                margin-bottom:20px;
+
                 
  }
 
@@ -211,5 +213,27 @@ ul{
                 color:white;
     }
     
+    @media only screen and (max-width: 600px) {
+       .main-upper {
+                        display: block;
+                        padding:10% 0 0 5%;
+                        align-items: center;
+                        text-align: center;
+       }
+
+       .container {
+                        display: block;
+       }
+
+       .side-note {
+                        width: 100%;
+       }
+
+       .sect-1 img{
+        height: 200px;
+        width:200px;
+}
+
+      }
     
     
