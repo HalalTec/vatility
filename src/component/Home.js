@@ -1,7 +1,9 @@
 import img from './Capture.PNG'
 
 const Home = () => {
-    
+    const access = () => {
+        window.location.href = '/wheel';
+    }
     return (
         <>
         <div className="super-container">
@@ -14,7 +16,7 @@ const Home = () => {
                         <p className='sub-title'><b>Explore where you are <br /> 
                         and where you want to be.</b></p>
                     <div className="min">
-                        <button>Take The Accessment</button>
+                        <button onClick={access}>Take The Accessment</button>
                     <div className="anchor">
                         <a href="" > Customize</a>
                         </div>
