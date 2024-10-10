@@ -19,13 +19,14 @@ const Wheel = () => {
         e.preventDefault();
         let ans= e.target.textContent
         setCounter(counter + 1);
+        console.log(career)
 
         if (counter <= 2) {
             setCareer((prev) =>  [...prev, ans])
                 
 
         }
-            if (counter > 2) {
+            if (counter >= 2) {
                 setSty({backgroundColor: "#F09B36"})
                 setP("Money")
                 setMoney((prev) =>  [...prev, ans])
@@ -59,11 +60,6 @@ const Wheel = () => {
                 setP("Physical Environment")
                 setPhysical((prev) =>  [...prev, ans])
             }
-            if (counter >= 12) {
-                setSty({backgroundColor: "#869ACF"})
-                setP("Physical Environment")
-                setSpirit((prev) =>  [...prev, ans])
-            }
             if (counter >= 14) {
                 setSty({backgroundColor: "895881"})
                 setP("Spirituality")
@@ -78,7 +74,7 @@ const Wheel = () => {
     return ( 
        
        <div>
-                     {counter <= 16 && (   <header style={style}> {p}  </header> )}
+                     {counter <= 15 && (   <header style={style}> {p}  </header> )}
                 <div className="section">
                 {counter === 1 && (
                 <Career question="How do you feel about your career right now?"/>
