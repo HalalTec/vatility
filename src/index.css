@@ -312,7 +312,10 @@ tr td+td{
             text-align: center;
 }
 
-
+.chartdiv {
+                width: 500px; 
+                height: 500px;
+}
 @media only screen and (max-width: 1024px) {
     .main-upper {
                      display: block;
@@ -333,13 +336,37 @@ tr td+td{
                      height: 200px;
                       width:200px;
 }
+        button{
+                        width: 80%;
+                        font-size: small;
+        }
          .result{
-             display: block;
-            text-align: center;
-            padding:5%;
+            display: block;
+            padding-left:15px;
          }
 
             td{
                     text-align:left;
             }
+
+            .section{
+                padding-left:30px;
+                padding-right: 10px;
+}
+header{
+        text-align: center;
+        padding-left:0px;
+        font-size: 30px;
+        font-weight: bold;
+        
+        
+}
+.chartdiv {
+        width: 300px; 
+        height: 300px;
+}
+        
    }
+
+
+   
