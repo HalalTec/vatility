@@ -94,16 +94,16 @@ const Result = ({
         
                 // Set data
                 const data = [
-                    { category: 'Phy. & Emot. H', currentValue: health[0], desiredValue: health[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: 'Career', currentValue: career[0], desiredValue: career[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: 'Living & Work Env.', currentValue: physical[0], desiredValue: physical[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: 'Spirituality', currentValue: spirit[0], desiredValue: spirit[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: 'Per. Growth', currentValue: per[0], desiredValue: per[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: 'Fin. Health', currentValue: money[0], desiredValue: money[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: 'Fun & Recr.', currentValue: fun[0], desiredValue: fun[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: 'Rel. & S. Life', currentValue: rel[0], desiredValue: rel[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: 'Purpose', currentValue: purpose[0], desiredValue: purpose[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: 'Contr & Legacy', currentValue: contribution[0], desiredValue: contribution[1], columnSettings: { fill: chart.get('colors').next() } },
+                    { category: '8', currentValue: health[0], desiredValue: health[1], columnSettings: { fill: chart.get('colors').next() } },
+                    { category: '1', currentValue: career[0], desiredValue: career[1], columnSettings: { fill: chart.get('colors').next() } },
+                    { category: '6', currentValue: physical[0], desiredValue: physical[1], columnSettings: { fill: chart.get('colors').next() } },
+                    { category: '7', currentValue: spirit[0], desiredValue: spirit[1], columnSettings: { fill: chart.get('colors').next() } },
+                    { category: '3', currentValue: per[0], desiredValue: per[1], columnSettings: { fill: chart.get('colors').next() } },
+                    { category: '2', currentValue: money[0], desiredValue: money[1], columnSettings: { fill: chart.get('colors').next() } },
+                    { category: '5', currentValue: fun[0], desiredValue: fun[1], columnSettings: { fill: chart.get('colors').next() } },
+                    { category: '4', currentValue: rel[0], desiredValue: rel[1], columnSettings: { fill: chart.get('colors').next() } },
+                    { category: '9', currentValue: purpose[0], desiredValue: purpose[1], columnSettings: { fill: chart.get('colors').next() } },
+                    { category: '10', currentValue: contribution[0], desiredValue: contribution[1], columnSettings: { fill: chart.get('colors').next() } },
 
                 ];
         
@@ -125,16 +125,16 @@ const Result = ({
 
 
             const categories = [
-                { name: 'Career and Professional Growth', values: [career[0], career[1], career[0] - career[1]] },
-                { name: 'Financial Health', values: [money[0], money[1], money[0] - money[1]] },
-                { name: 'personal growth', values: [per[0], per[1], per[0] - per[1]] },
-                { name: 'Relationships and Social Life', values: [rel[0], rel[1], rel[0] - rel[1]] },
-                { name: 'fun and recreation', values: [fun[0], fun[1], fun[0] - fun[1]] },
-                { name: 'Living & Work Environment', values: [physical[0], physical[1], physical[0] - physical[1]] },
-                { name: 'Spirituality and Inner Growth', values: [spirit[0], spirit[1], spirit[0] - spirit[1]] },
-                { name: 'Physical & Emotional Health ', values: [health[0], health[1], health[0] - health[1]] },
-                { name: 'Purpose & Fulfillment ', values: [purpose[0], purpose[1], purpose[0] - purpose[1]] },
-                { name: 'Contribution & Legacy ', values: [contribution[0], contribution[1], contribution[0] - contribution[1]] }
+                { name: '1  Career and Professional Growth', values: [career[0], career[1], career[1] - career[0]] },
+                { name: '2  Financial Health', values: [money[0], money[1], money[1] - money[0]] },
+                { name: '3  Personal growth', values: [per[0], per[1], per[1] - per[0]] },
+                { name: '4  Relationships and Social Life', values: [rel[0], rel[1], rel[1] - rel[0]] },
+                { name: '5  Fun and Recreation', values: [fun[0], fun[1], fun[1] - fun[0]] },
+                { name: '6  Living and Work Environment', values: [physical[0], physical[1], physical[1] - physical[0]] },
+                { name: '7  Spirituality and Inner Growth', values: [spirit[0], spirit[1], spirit[1] - spirit[0]] },
+                { name: '8  Physical and Emotional Health ', values: [health[0], health[1], health[1] - health[0]] },
+                { name: '9  Purpose and Fulfillment ', values: [purpose[0], purpose[1], purpose[1] - purpose[0]] },
+                { name: '10 Contribution and Legacy ', values: [contribution[0], contribution[1], contribution[1] - contribution[0]] }
 
 
             ];
@@ -176,7 +176,7 @@ const Result = ({
                 <div className="pie">
                     {/* <img src={res} alt="" srcSet="" /> */} 
                     <div id="chartdiv" className='chartdiv'></div>
-
+                   
                 </div>
 
                 <div className="chart">
