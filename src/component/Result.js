@@ -116,19 +116,7 @@ const Result = ({
 
                 
 
-                // const data = [
-                //     { category: '8', currentValue: health[0], columnSettings: { fill: chart.get('colors').next() } },
-                //     { category: '1', currentValue: career[0], columnSettings: { fill: chart.get('colors').next() } },
-                //     { category: '6', currentValue: physical[0], columnSettings: { fill: chart.get('colors').next() } },
-                //     { category: '7', currentValue: spirit[0], columnSettings: { fill: chart.get('colors').next() } },
-                //     { category: '3', currentValue: per[0],  columnSettings: { fill: chart.get('colors').next() } },
-                //     { category: '2', currentValue: money[0],  columnSettings: { fill: chart.get('colors').next() } },
-                //     { category: '5', currentValue: fun[0],  columnSettings: { fill: chart.get('colors').next() } },
-                //     { category: '4', currentValue: rel[0],  columnSettings: { fill: chart.get('colors').next() } },
-                //     { category: '9', currentValue: purpose[0],  columnSettings: { fill: chart.get('colors').next() } },
-                //     { category: '10', currentValue: contribution[0], columnSettings: { fill: chart.get('colors').next() } },
-
-                // ];
+       
         
                 currentSeries.data.setAll(data);
                 // desiredSeries.data.setAll(data);
@@ -199,7 +187,7 @@ const Result = ({
                         {sortedCategories.map((category, index) => (
                         <tr key={index}>
                             <td>{index+1}</td>
-                            <td>{category.name}</td>
+                            <td style={{textAlign:"left"}}>{category.name}</td>
                             <td>{category.values[0]}</td>
                             <td>{category.values[1]}</td>
                             <td>{category.values[2]}</td>

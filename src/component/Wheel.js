@@ -133,10 +133,10 @@ const Wheel = () => {
                      {counter <= 20 && (   <header style={style}> {p}  </header> )}
                 <div className="section">
                 {counter === 1 && (
-                <Career question="How do you feel about your career right now?"/>
+                <Career question="How do you feel about your career and professional growth right now?"/>
             )}
                 {counter === 2 && (
-                <Career question=" How would you like to feel about your career in the future?" />
+                <Career question=" How would you like to feel about your career and professional growth in the future?" />
             )}
 
         {counter === 3 && (
@@ -170,16 +170,16 @@ const Wheel = () => {
                 <Career question="How would you like to feel about your fun and recreation in the future?" />
             )}
         {counter === 13 && (
-                <Career question="How do you feel about your Living & Working Environment right now?" />
+                <Career question="How do you feel about your living & working environment right now?" />
             )}
         {counter === 14 && (
-                <Career question="How would you like to feel about your Living & Working Environment in the future?" />
+                <Career question="How would you like to feel about your living & working wnvironment in the future?" />
             )}
         {counter === 15 && (
-                <Career question="How do you feel about your spirituality & Inner Growth right now?" />
+                <Career question="How do you feel about your spirituality & inner growth right now?" />
             )}
         {counter === 16 && (
-                <Career question="How would you like to feel about your spirituality & Inner Growth in the future?" />
+                <Career question="How would you like to feel about your spirituality & inner growth in the future?" />
             )}
         {counter === 17 && (
                 <Career question="How do you feel about your purpose and fullfillment right now?" />
