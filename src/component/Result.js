@@ -11,8 +11,23 @@ const Result = ({
 
         }) => {
 
-          
-           console.log(per[0], per[1])
+            const categories = [
+                { name: 'Career and Professional Growth', values: [career[0], career[1], career[1] - career[0]] },
+                { name: 'Financial Health', values: [money[0], money[1], money[1] - money[0]] },
+                { name: 'Personal growth', values: [per[0], per[1], per[1] - per[0]] },
+                { name: 'Relationships and Social Life', values: [rel[0], rel[1], rel[1] - rel[0]] },
+                { name: 'Fun and Recreation', values: [fun[0], fun[1], fun[1] - fun[0]] },
+                { name: 'Living and Work Environment', values: [physical[0], physical[1], physical[1] - physical[0]] },
+                { name: 'Spirituality and Inner Growth', values: [spirit[0], spirit[1], spirit[1] - spirit[0]] },
+                { name: 'Physical and Emotional Health ', values: [health[0], health[1], health[1] - health[0]] },
+                { name: 'Purpose and Fulfillment ', values: [purpose[0], purpose[1], purpose[1] - purpose[0]] },
+                { name: 'Contribution and Legacy ', values: [contribution[0], contribution[1], contribution[1] - contribution[0]] }
+
+
+            ];
+
+            const sortedCategories = [...categories].sort((a, b) => b.values[2] - a.values[2]);
+            
 
             useEffect(() => {
                 // Create root element
@@ -76,44 +91,52 @@ const Result = ({
                 });
         
                 // Create series for desired satisfaction
-                const desiredSeries = chart.series.push(
-                    am5radar.RadarColumnSeries.new(root, {
-                        xAxis: xAxis,
-                        yAxis: yAxis,
-                        valueYField: 'desiredValue',
-                        categoryXField: 'category',
-                    })
-                );
+                // const desiredSeries = chart.series.push(
+                //     am5radar.RadarColumnSeries.new(root, {
+                //         xAxis: xAxis,
+                //         yAxis: yAxis,
+                //         valueYField: 'desiredValue',
+                //         categoryXField: 'category',
+                //     })
+                // );
         
-                desiredSeries.columns.template.setAll({
-                    tooltipText: '{categoryX}: Desired {desiredValue}',
-                    templateField: 'columnSettings',
-                    strokeOpacity: 0,
-                    width: am5.p100,
-                });
+                // desiredSeries.columns.template.setAll({
+                //     tooltipText: '{categoryX}: Desired {desiredValue}',
+                //     templateField: 'columnSettings',
+                //     strokeOpacity: 0,
+                //     width: am5.p100,
+                // });
         
                 // Set data
-                const data = [
-                    { category: '8', currentValue: health[0], desiredValue: health[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: '1', currentValue: career[0], desiredValue: career[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: '6', currentValue: physical[0], desiredValue: physical[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: '7', currentValue: spirit[0], desiredValue: spirit[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: '3', currentValue: per[0], desiredValue: per[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: '2', currentValue: money[0], desiredValue: money[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: '5', currentValue: fun[0], desiredValue: fun[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: '4', currentValue: rel[0], desiredValue: rel[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: '9', currentValue: purpose[0], desiredValue: purpose[1], columnSettings: { fill: chart.get('colors').next() } },
-                    { category: '10', currentValue: contribution[0], desiredValue: contribution[1], columnSettings: { fill: chart.get('colors').next() } },
+                const data = []
 
-                ];
+                sortedCategories.map((category, index) => {
+                    data.push({ category: index+1, currentValue: category.values[0], columnSettings: { fill: chart.get('colors').next() } })
+                })
+
+                
+
+                // const data = [
+                //     { category: '8', currentValue: health[0], columnSettings: { fill: chart.get('colors').next() } },
+                //     { category: '1', currentValue: career[0], columnSettings: { fill: chart.get('colors').next() } },
+                //     { category: '6', currentValue: physical[0], columnSettings: { fill: chart.get('colors').next() } },
+                //     { category: '7', currentValue: spirit[0], columnSettings: { fill: chart.get('colors').next() } },
+                //     { category: '3', currentValue: per[0],  columnSettings: { fill: chart.get('colors').next() } },
+                //     { category: '2', currentValue: money[0],  columnSettings: { fill: chart.get('colors').next() } },
+                //     { category: '5', currentValue: fun[0],  columnSettings: { fill: chart.get('colors').next() } },
+                //     { category: '4', currentValue: rel[0],  columnSettings: { fill: chart.get('colors').next() } },
+                //     { category: '9', currentValue: purpose[0],  columnSettings: { fill: chart.get('colors').next() } },
+                //     { category: '10', currentValue: contribution[0], columnSettings: { fill: chart.get('colors').next() } },
+
+                // ];
         
                 currentSeries.data.setAll(data);
-                desiredSeries.data.setAll(data);
+                // desiredSeries.data.setAll(data);
                 xAxis.data.setAll(data);
         
                 // Animate chart
                 currentSeries.appear(1000);
-                desiredSeries.appear(1000);
+                // desiredSeries.appear(1000);
                 chart.appear(1000, 100);
         
                 // Cleanup function
@@ -123,23 +146,7 @@ const Result = ({
             }, []);
        
 
-
-            const categories = [
-                { name: '1  Career and Professional Growth', values: [career[0], career[1], career[1] - career[0]] },
-                { name: '2  Financial Health', values: [money[0], money[1], money[1] - money[0]] },
-                { name: '3  Personal growth', values: [per[0], per[1], per[1] - per[0]] },
-                { name: '4  Relationships and Social Life', values: [rel[0], rel[1], rel[1] - rel[0]] },
-                { name: '5  Fun and Recreation', values: [fun[0], fun[1], fun[1] - fun[0]] },
-                { name: '6  Living and Work Environment', values: [physical[0], physical[1], physical[1] - physical[0]] },
-                { name: '7  Spirituality and Inner Growth', values: [spirit[0], spirit[1], spirit[1] - spirit[0]] },
-                { name: '8  Physical and Emotional Health ', values: [health[0], health[1], health[1] - health[0]] },
-                { name: '9  Purpose and Fulfillment ', values: [purpose[0], purpose[1], purpose[1] - purpose[0]] },
-                { name: '10 Contribution and Legacy ', values: [contribution[0], contribution[1], contribution[1] - contribution[0]] }
-
-
-            ];
-
-            const sortedCategories = [...categories].sort((a, b) => b.values[2] - a.values[2]);
+           
 
             const save = () => {
                 const input = document.getElementById('res');
@@ -183,6 +190,7 @@ const Result = ({
                     <table>
                         
                     <tr>
+                            <th>No.</th>
                             <th>Life Domain</th>
                             <th>Now</th>
                             <th>Future</th>
@@ -190,6 +198,7 @@ const Result = ({
                         </tr>
                         {sortedCategories.map((category, index) => (
                         <tr key={index}>
+                            <td>{index+1}</td>
                             <td>{category.name}</td>
                             <td>{category.values[0]}</td>
                             <td>{category.values[1]}</td>

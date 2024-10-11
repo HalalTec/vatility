@@ -94,6 +94,8 @@ const Wheel = () => {
 
         if (counter === 14 && counter < 16) {
             setSty({ backgroundColor: "#895881" });
+            setP("Spirituality & Inner Growth");
+
         } 
 
         if(counter > 14 && counter <= 16){ 
@@ -138,22 +140,22 @@ const Wheel = () => {
             )}
 
         {counter === 3 && (
-                <Career question=" How do you feel about your money right now?" />
+                <Career question=" How do you feel about your financial health right now?" />
             )}
         {counter === 4 && (
-                <Career question="How would you like to feel about your money in the future?" />
+                <Career question="How would you like to feel about your financial health in the future?" />
             )}
         {counter === 5 && (
-                <Career question="How do you feel about your health right now?" />
+                <Career question="How do you feel about your physical & emotional health right now?" />
             )}
         {counter === 6 && (
-                <Career question="How would you like to feel about your health in the future?" />
+                <Career question="How would you like to feel about your Physical & Emotional Health in the future?" />
             )}
         {counter === 7 && (
-                <Career question="How do you feel about your relationships right now?" />
+                <Career question="How do you feel about your relationships and social life right now?" />
             )}
         {counter === 8 && (
-                <Career question="How would you like to feel about your relationships in the future?" />
+                <Career question="How would you like to feel about your relationships and social life in the future?" />
             )}
         {counter === 9 && (
                 <Career question="How do you feel about your personal growth right now?" />
@@ -168,16 +170,16 @@ const Wheel = () => {
                 <Career question="How would you like to feel about your fun and recreation in the future?" />
             )}
         {counter === 13 && (
-                <Career question="How do you feel about your physical environment right now?" />
+                <Career question="How do you feel about your Living & Working Environment right now?" />
             )}
         {counter === 14 && (
-                <Career question="How would you like to feel about your physical environment in the future?" />
+                <Career question="How would you like to feel about your Living & Working Environment in the future?" />
             )}
         {counter === 15 && (
-                <Career question="How do you feel about your spirituality right now?" />
+                <Career question="How do you feel about your spirituality & Inner Growth right now?" />
             )}
         {counter === 16 && (
-                <Career question="How would you like to feel about your spirituality in the future?" />
+                <Career question="How would you like to feel about your spirituality & Inner Growth in the future?" />
             )}
         {counter === 17 && (
                 <Career question="How do you feel about your purpose and fullfillment right now?" />
