@@ -1,42 +1,121 @@
 body{
         margin:0;
         padding:0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1{
+                text-align: center;
+                padding:30px;
+                box-sizing: border-box;
+                font-size: 40px;
+                font-weight: 550;
+                font-family: Eras Bold ITC;
+}
+
+hr {
+        background-color: rgb(236, 225, 225);
+}
+
+
+.sect3{
+                text-align:center;
+                margin:0 auto;
+                width:50%;
+                font-style: italic;
+}
 
 .main-upper{
-                padding:10% 0 0 12%;
+                padding:5% 0 0 5%;
                 display: inline-flex;
                 justify-content: center;
-                gap: 50px;
+                gap: 20%;
 }
 .sect2{
-                padding-top:20px;
+                padding-top:80px;
+                width: 30%;
+                box-sizing: border-box;
+                text-align:center;
 }
-h1{
-        font-size: 40px;
-        font-weight: 550;
-        font-family: Arial, Helvetica, sans-serif;
+
+
+      #range {
+        -webkit-appearance: none; /* Remove default styling (WebKit browsers) */
+        height: 6px; /* Track height */
+        background: linear-gradient(to right, #df4d28 0%, #dfd43d 50%, #5ebe26 50%);
+        border-radius: 4px; /* Rounded corners */
+        outline: none; /* Remove outline */
+        width: 50%;
+      }
+
+.sub-title {
+        font-size: 20px;
+        font-weight: 900;
+        font-style: italic;
+        word-spacing: 3px;
+        margin-bottom: 50px;
         
 }
 
-.sub-title {
-        font-size: 25px;
-        font-weight: 500;
-        font-family: Arial, Helvetica, sans-serif;
+.message {     
+        position:absolute;
+        width:100%;
+        height: 100%;
+        background: rgba(5, 5, 5, 0.8);
+        padding-top: 10%;
+        z-index:10;
+        top:5px;
+        box-sizing: border-box;
+
+
+       
+}
+
+.card{          
+        border-radius: 10px;
+        width: 40%;
+        margin: auto;
+        height: fit-content;
+        box-sizing: border-box;
+        background-color: rgb(220, 236, 220);
+        justify-content: center;
+        padding: 0 10px 0 10px;
+        text-align: center;
+
+}
+
+.card h3{
+                margin:0;
+                
+}
+
+.card button {
+                color: black;
+                padding:10px;
+                background-color: rgb(220, 236, 220);
+        }
+
+.card p {
+                font-size: small;
+}
+
+.ref-button{
+                display: inline-flex;
+                text-align: center;
+                justify-content: center;
+                gap:40px;
 }
 
  button{
                 background-color: #2da7db;
                 color: white;
-                padding: 10px 5px 10px 5px;
-                box-sizing: border-box;
+                padding: 10px 2px 10px 2px;
                 border: none;
-                font-size: 25px;
+                font-size: 20px;
                 cursor: pointer;
                 font-weight: bold;
-                font-family: Arial, Helvetica, sans-serif;
-                width:100%;
+                width:60%;
+                box-sizing: border-box;
                 margin-bottom: 20px;
 
  }
@@ -63,141 +142,76 @@ h1{
                 padding:5% 5% 5% 10%;
                 box-sizing:border-box;
                 display:inline-flex;
-                color:white;
-                background-color: black;
+                color:rgb(8, 8, 8);
  }
-ul{
-        width: 50%;                
+ol{
+        text-align: left;                
 }
  li{
-        list-style: none;
-        font-size: 30px;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 30px;
+        list-style:decimal;
+        margin-bottom: 10px;
  }
 
- .career::before {
-    content: ""; /* Add content property for the pseudo-element to display */
-    width: 150px;
-    height: 15px; /* Add height if you want it to be visible */
-    border: 1px solid transparent;
-    background-color: #ED6A56;
-    display: inline-block; /* Use inline-block to allow width and height */
-    margin-right:12px;
+ .close{
+                margin: 0px 0px 0px 0px;
+                text-align: center;
+                width: 20px;
+                margin-left: 140px;
+                font-size: small;
+                height: fit-content;
+                padding: 0px 0px 0px 0px;
+                border-radius: 100%;
+               
+ }
+
+ .close:hover{
+                 background-color: rgb(220, 236, 220);
+                 border-bottom: red;
+ }
+
+ .confirm {
+                display:inline-flex;
+                width: 100%;
+                padding-left:60px;
+                box-sizing: border-box;
+ }
+
+ a{
+        font-size:medium;
+        text-decoration: none;
+        font-style: normal;
+ }
+
+
+.steps {
+                text-align:left;
 }
 
-.career {
-                color: #ED6A56;
-}
-.money::before {
-        content: ""; /* Add content property for the pseudo-element to display */
-        width: 150px;
-        height: 15px; /* Add height if you want it to be visible */
-        border: 1px solid transparent;
-        background-color: #F09B36;
-        display: inline-block; /* Use inline-block to allow width and height */
-        margin-right:12px;
-
-    }
-    .money{
-                color:#F09B36;
-    }
-.health::before {
-        content: ""; /* Add content property for the pseudo-element to display */
-        width: 150px;
-        height: 15px; /* Add height if you want it to be visible */
-        border: 1px solid transparent;
-        background-color: #FFC74E;
-        display: inline-block; /* Use inline-block to allow width and height */
-        margin-right:12px;
-
-    }
-.health {
-        color: #FFC74E;
+.steps p {       
+                font-size: medium;
+                font-style:normal;
 }
 
-    .rel::before {
-        content: ""; /* Add content property for the pseudo-element to display */
-        width: 150px;
-        height: 15px; /* Add height if you want it to be visible */
-        border: 1px solid transparent;
-        background-color: #A0B470;
-        display: inline-block; /* Use inline-block to allow width and height */
-        margin-right:12px;
+.concept p, .how p, .purpose li, .align p{
+                text-align: left;
+                font-style: normal;
+                font-size:medium;
+}
 
-    }
-
-    .rel{
-        color: #A0B470;
-    }
-
-    .per::before {
-        content: ""; /* Add content property for the pseudo-element to display */
-        width: 150px;
-        height: 15px; /* Add height if you want it to be visible */
-        border: 1px solid transparent;
-        background-color: #6E9E75;
-        display: inline-block; /* Use inline-block to allow width and height */
-        margin-right:12px;
-
-    }
-
-    .per {
-                color:#6E9E75;;
-    }
-
-    .fun::before {
-        content: ""; /* Add content property for the pseudo-element to display */
-        width: 150px;
-        height: 15px; /* Add height if you want it to be visible */
-        border: 1px solid transparent;
-        background-color: #73CCE4;
-        display: inline-block; /* Use inline-block to allow width and height */
-        margin-right:12px;
-
-    }
-
-    .fun {
-        color: #73CCE4;
-    }
-
-    .phy::before {
-        content: ""; /* Add content property for the pseudo-element to display */
-        width: 150px;
-        height: 15px; /* Add height if you want it to be visible */
-        border: 1px solid transparent;
-        background-color: #869ACF;
-        display: inline-block; /* Use inline-block to allow width and height */
-        margin-right:12px;
-
-    }
-    
-    .phy{
-                color:#869ACF;
-    }
-    
-    .sp::before {
-        content: ""; /* Add content property for the pseudo-element to display */
-        width: 150px;
-        height: 15px; /* Add height if you want it to be visible */
-        border: 1px solid transparent;
-        background-color: #895881;
-        display: inline-block; /* Use inline-block to allow width and height */
-        margin-right:12px;
-
-    }
-    .sp{
-                color: #895881;
-    }
-
+.tips{
+                margin-top:-80px;
+                width: 60%;
+                text-align: center;
+                display: block;
+                position: absolute;
+}
+ 
     .side-note{
                 width: 43%;
     }
 
     p{
         font-size: 25px;
-        font-family: Arial, Helvetica, sans-serif;
         
     }
     
@@ -222,12 +236,24 @@ ul{
                 color:white;
                 font-size: 60px;
                 font-weight: bolder;
-                padding-left:250px;
+                text-align: center;
                 
 }
 
-ol {
-        gap: 50px;
+.title {
+                text-align: center;
+                font-style: italic;
+                margin-bottom: 0px;
+}
+
+.mean {
+               padding: 0px 0px 0px 15%;
+}
+
+.mean p{
+        font-size: medium;
+        font-style: italic;
+        font-weight: bolder;
 }
 
 span {
@@ -245,9 +271,12 @@ span {
 }
 
 .section{
-                padding-left:150px;
+                text-align: center;
 }
 
+.section ol {
+                text-align: center;
+}
 
 .question-answer {
         margin-top: 30px;
@@ -255,10 +284,44 @@ span {
         margin-bottom: 50px;
 }
 
+.pq{
+        font-size: large;
+}
+
 .foot{
         position: fixed;
         bottom: 0;
 }
+
+.select {
+        position:absolute;
+        margin:10px 0px 0px 5px;
+        padding: 10px 15px 10px 15px;
+        font-size: medium;
+        font-weight: bold;
+        height: fit-content;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100px;
+        color:white;
+        background-color: #050505;
+        cursor: pointer;
+        
+        
+}
+
+
+.select:hover {
+                color:black;
+                background-color: rgb(220, 236, 220);
+
+}
+
+.ref-button .prev:hover, .ref-button .next:hover {
+        background-color: rgb(220, 236, 220);
+        color: white;
+}  
+
 
 .result{
             display: inline-flex;
@@ -269,7 +332,6 @@ span {
 
 .chart{
             padding-top:50px;
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             font-size: medium;
 
 }
@@ -291,6 +353,41 @@ td, th{
         margin-bottom: 30px;
 }
 
+.observe {
+               font-size: medium;
+                text-align: center;
+                font-style: italic;
+}
+
+.card h5 {
+                font-weight: lighter;
+}
+
+.observe li{
+        text-align: left;
+        margin:0 auto;
+        width: 70%;
+        margin-bottom: 10px;
+        font-style: normal;
+        
+}
+
+.email{
+                justify-content: center;
+                text-align: center;
+}
+
+.email button{
+                width: 50%;
+                padding: 20px;
+}
+
+.email input {
+                padding: 10px;
+                margin-left:20px;
+                margin-bottom: 30px;
+
+}
 .save{
         border:none;
         border-bottom: 1px solid blue;
@@ -316,13 +413,85 @@ tr td+td{
                 width: 500px; 
                 height: 500px;
 }
+
+.prev, .next{
+        background-color: white;
+        width: fit-content;
+        margin-top: 30px;
+        height: fit-content;
+
+
+}
+
+#myButton {
+                color:rgb(220, 236, 220);
+                background-color: rgb(220, 236, 220);
+
+}
+
+#mybutton:hover{
+        background-color: rgb(220, 236, 220);
+}
+
+.prev img{
+                width: 30px;
+                height: 30px;
+}
+
+.next img{
+        width: 26px;
+        height: 26px;
+}
+
+
+.prev:hover, .next:hover{
+                background-color: white;
+}
+.carousel{
+                margin-top: -100px;
+                display: inline-flex;
+                justify-content: center;
+                width:70%;
+                margin-bottom: 50px;
+}
+
+.carousel-content {
+                        width: 50%;
+                        background-color:#EEE;
+                        padding:10px;
+                        height:100px;
+                        padding-bottom: 0px;
+                        box-sizing: border-box;
+                        display: flex;  
+                        justify-content: center;  
+                        align-items: center;   
+}
+
+.message h2{
+                font-size: large;
+}
+
+.range input{
+                width: 50%;
+}
+
+
 @media only screen and (max-width: 1024px) {
     .main-upper {
                      display: block;
                      padding:10% 0 0 5%;
                      align-items: center;
                      text-align: center;
+                
     }
+
+    .sect2{
+                width: 100%;
+                padding-top:10px;
+                padding-right: 20px;
+                box-sizing: border-box;
+    }
+
 
     .container {
                      display: block;
@@ -337,7 +506,7 @@ tr td+td{
                       width:200px;
 }
         button{
-                        width: 80%;
+                        width: 60%;
                         font-size: small;
         }
          .result{
@@ -349,23 +518,73 @@ tr td+td{
                     text-align:left;
             }
 
-            .section{
-                padding-left:30px;
-                padding-right: 10px;
-}
-header{
-        text-align: center;
-        padding-left:0px;
-        font-size: 30px;
-        font-weight: bold;
-        
-        
-}
+           
+
 .chartdiv {
         width: 300px; 
         height: 300px;
 }
-        
+
+.carousel {     
+                        width: 100%;
+                        margin-left:-10px;
+                        box-sizing: border-box;
+}
+
+.carousel-content{
+                width: 80%;
+                height: fit-content;
+                padding-bottom: 10px;
+}
+
+.sect3 {
+                width: 80%;
+}
+        .tips{
+                width: 80%;
+        }
+
+        .card {
+                 width:80%;
+        }
+
+        .ref-button {
+                        gap:60px;
+        }
+
+        .message {
+                        width:100%;
+                        height: 100%;
+        }
+
+        header {
+                        font-size: x-large;
+        }
+
+        .confirm {
+                        padding-left: 10px;
+                        text-align: center;
+        }
+        .confirm h2{
+                        font-size: 15px;
+
+        }
+
+        .close{
+                        margin-left: 7%;
+                        
+        }
+
+        .section ol {
+                        text-align: left;
+        }
+
+        .range input{
+                width: 70%;
+}
+        .pq{
+                padding: 0 20px;
+        }
    }
 
 
