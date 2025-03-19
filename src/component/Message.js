@@ -1,85 +1,86 @@
-import Active from "./messages/Active";
-import Branding from "./messages/Branding";
-import Energized from "./messages/Energized";
-import Interview from "./messages/Interview";
-import Know from "./messages/Know";
-import Linkedin from "./messages/Linkedin";
+import Brand from "./messages/Brand";
+import Business from "./messages/Business";
+import Customer from "./messages/Customer";
+import Execution from "./messages/Execution";
+import Lead from "./messages/Lead";
+import Mental from "./messages/Mental";
 import Network from "./messages/Network";
-import Research from "./messages/Research";
-import Tracking from "./messages/Tracking";
-import Upskill from "./messages/Upskill";
+import Product from "./messages/Product";
+import Revenue from "./messages/Revenue";
+import Vision from "./messages/Vision";
+
 
 
 
 const Message = ({close, msg, p, submit, quest}) => {
 
-    if (p === 'Know Yourself'){
+    if (p === 'Vision, Strategy & Founder Clarity'){
 
         return ( 
-            <Know close={close} msg={msg} submit={submit} quest={quest}/>
+            <Vision close={close} msg={msg} submit={submit} quest={quest}/>
         );
     }
 
-    if (p === 'Do Research'){
+    if (p === 'Product-Market Fit & Value Proposition'){
 
         return ( 
-            <Research close={close} msg={msg} submit={submit} quest={quest}/>
+            <Product close={close} msg={msg} submit={submit} quest={quest}/>
         );
     }
       
-    if (p === 'Perfecting Your Resume and LinkedIn Profile'){
+    if (p === 'Revenue & Cash Flow'){
 
         return ( 
-            <Linkedin close={close} msg={msg} submit={submit} quest={quest}/>
+            <Revenue close={close} msg={msg} submit={submit} quest={quest}/>
         );
     }
 
-    if (p === 'Networking Like a Pro'){
+    if (p === 'Lead Generation & Sales Process'){
+
+        return ( 
+            <Lead close={close} msg={msg} submit={submit} quest={quest}/>
+        );
+    }
+
+    if (p === 'Brand Positioning & Differentiation'){
+
+        return ( 
+            <Brand close={close} msg={msg} submit={submit} quest={quest}/>
+        );
+    }
+
+    if (p === "Execution, Productivity & Founder's Time Management"){
+
+        return ( 
+            <Execution close={close} msg={msg} submit={submit} quest={quest}/>
+        );
+    }
+
+    if (p === 'Network, Partnerships & Growth Leverage'){
 
         return ( 
             <Network close={close} msg={msg} submit={submit} quest={quest}/>
         );
     }
 
-    if (p === 'Personal Branding & Thought Leadership'){
+    if (p === 'Business Model & Scalability'){
 
         return ( 
-            <Branding close={close} msg={msg} submit={submit} quest={quest}/>
+            <Business close={close} msg={msg} submit={submit} quest={quest}/>
         );
     }
 
-    if (p === 'Upskilling & Certification'){
+    if (p === 'Customer Experience & Retention'){
 
         return ( 
-            <Upskill close={close} msg={msg} submit={submit} quest={quest}/>
+            <Customer close={close} msg={msg} submit={submit} quest={quest}/>
         );
     }
 
-    if (p === 'Active Job Applications'){
+    if (p === 'Mental Resilience & Founder Burnout Risk'){
 
         return ( 
-            <Active close={close} msg={msg} submit={submit} quest={quest}/>
-        );
-    }
-
-    if (p === 'Tracking & Organization'){
-
-        return ( 
-            <Tracking close={close} msg={msg} submit={submit} quest={quest}/>
-        );
-    }
-
-    if (p === 'Staying Energized, Persistent & Mentally Strong'){
-
-        return ( 
-            <Energized close={close} msg={msg} submit={submit} quest={quest}/>
-        );
-    }
-
-    if (p === 'Mastery of Interview Preparation & Negotiation'){
-
-        return ( 
-            <Interview close={close} msg={msg} submit={submit} quest={quest}/>
+            <Mental close={close} msg={msg} submit={submit} quest={quest}/>
         );
     }
 

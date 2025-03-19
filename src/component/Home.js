@@ -18,7 +18,7 @@ const Home = () => {
         <>
         <div className="super-container">
             <div className='Header'>
-            <h1><b>Kaizen Job Search Wheel</b></h1>
+            <h1><b>Kaizen SME Vitality Wheel</b></h1>
             <hr></hr>
             </div>
                 <div className="main-upper">

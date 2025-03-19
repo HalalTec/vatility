@@ -10,7 +10,7 @@ const Test = ({selected}) => {
     const [val, setVal] = useState()
     const [counter, setCounter] = useState(1);
     const [style, setSty] = useState({backgroundColor: "#ED6A56"})
-    const [p, setP] = useState("Know Yourself")
+    const [p, setP] = useState("Vision, Strategy & Founder Clarity")
     const [career, setCareer] = useState([])
     const [health, setHealth] = useState([])
     const [money, setMoney] = useState([])
@@ -21,9 +21,9 @@ const Test = ({selected}) => {
     const [spirit, setSpirit] = useState([])
     const [cont, setCont] = useState([])
     const [pur, setPur] = useState([])
-    const [item, setItem] = useState([ "Do you clearly understand your core values and strengths in the job market?",
-                                        "Do your passions and interests align with the type of job you are seeking?",
-                                        "Have you identified and started to challenge any limiting beliefs hindering your job search?"])
+    const [item, setItem] = useState([ "Do you have a clear long-term vision and strategic direction for your business?",
+                                        "Have you defined measurable goals that align with your vision and market opportunities?",
+                                        "Do you regularly reassess and refine your strategy based on industry trends and internal progress?"])
     const tip =["Tip 1", "Tip 2", "Tip 3"]
     const [message, setMessage] = useState(false)
     const [msg, setMsg] = useState(0)
@@ -54,12 +54,12 @@ const confirmFuture = (e) => {
        
         if (counter === 2 && counter < 4) {
             setSty({ backgroundColor: "#F09B36" });
-            setP("Do Research");
+            setP("Product-Market Fit & Value Proposition");
        
             setItem([
-                "Have you developed effective strategies to gather insights about potential employers?",
-                "Do you evaluate a company’s culture and values to determine if it’s a good fit for you?",
-                "Have you found valuable resources to stay informed about industry trends and job market demands?"
+                "Have you validated that your product or service solves a real problem for your target market?",
+                "Does your value proposition clearly differentiate you from competitors in the industry?",
+                "Do you have a process for gathering and implementing customer feedback to improve your offering?"
             ])
             
           
@@ -72,11 +72,11 @@ const confirmFuture = (e) => {
         
          if (counter ===4 && counter < 6) {
             setSty({ backgroundColor: "#FFC74E" });
-            setP("Perfecting Your Resume and LinkedIn Profile");
+            setP("Revenue & Cash Flow");
             setItem([
-                "Does your resume and LinkedIn profile clearly reflect your skills and personal brand?",
-                "Have you tailored your resume and LinkedIn profile to match the roles you’re targeting?",
-                "Have you received feedback on your resume and LinkedIn profile, and implemented changes based on it?"
+                "Do you have a predictable and sustainable revenue model in place?",
+                "Are you tracking key financial metrics to ensure positive cash flow and profitability?",
+                "Have you identified opportunities to increase revenue through pricing, upselling, or new offerings?"
             ])
             
         } 
@@ -88,11 +88,11 @@ const confirmFuture = (e) => {
         
         if (counter === 6 && counter < 8) {
             setSty({ backgroundColor: "#A0B470" });
-            setP("Networking Like a Pro");
+            setP("Lead Generation & Sales Process");
             setItem([
-                "Do you actively build and nurture relationships within your industry?",
-                "Have you identified specific networking strategies that have been effective for you?",
-                "Do you successfully leverage social media to expand your professional network?"
+                "Do you have a consistent system for attracting and converting leads into paying customers?",
+                "Have you identified the most effective sales channels for your business?",
+                "Are you optimizing your sales process based on data and customer feedback?"
             ])
         }
         
@@ -103,11 +103,11 @@ const confirmFuture = (e) => {
         
         if (counter === 8 && counter < 10) {
             setSty({ backgroundColor: "#6E9E75" });
-            setP("Personal Branding & Thought Leadership");
+            setP("Brand Positioning & Differentiation");
             setItem([
-                "Do you showcase your unique expertise or perspective through your personal brand?",
-                "Are you engaging with your audience to establish yourself as a thought leader in your field?",
-                "Does your online presence accurately reflect your personal and professional values?"
+                "Does your brand clearly communicate what makes you unique in the marketplace?",
+                "Have you crafted a compelling brand story that resonates with your ideal customers?",
+                "Are you consistently reinforcing your brand message across all touchpoints?"
             ])
         } 
         if(counter > 8 && counter <= 10){ 
@@ -115,11 +115,11 @@ const confirmFuture = (e) => {
         }
         if (counter === 10 && counter < 12) {
             setSty({ backgroundColor: "#73CCE4" });
-            setP("Upskilling & Certification");
+            setP("Execution, Productivity & Founder's Time Management");
             setItem([
-                "Have you identified the skills necessary for your desired role and pursued them?",
-                "Do you prioritize certifications or courses based on your career goals?",
-                "Have you overcome challenges in upskilling, such as time constraints or access to resources?"
+                "Do you prioritize high-impact tasks that drive business growth?",
+                "Have you developed productivity systems to manage your workload effectively?",
+                "Are you delegating or automating tasks to free up time for strategic decisions?"
             ])
         } 
         if(counter > 10 && counter <= 12){ 
@@ -128,11 +128,11 @@ const confirmFuture = (e) => {
         
          if (counter === 12 && counter < 14) {
             setSty({ backgroundColor: "#869ACF" });
-            setP("Active Job Applications");
+            setP("Network, Partnerships & Growth Leverage");
             setItem([
-                "Do you use specific criteria to decide which job opportunities to apply for?",
-                "Do you track metrics to evaluate the effectiveness of your job applications?",
-                "Do your applications clearly reflect your enthusiasm and fit for each role?"
+                "Are you actively building relationships with key stakeholders who can help your business grow?",
+                "Do you have a strategy for leveraging partnerships to scale your reach and impact?",
+                "Have you nurtured a strong support network of mentors, advisors, or peers?"
             ])
 
         } 
@@ -143,11 +143,11 @@ const confirmFuture = (e) => {
 
         if (counter === 14 && counter < 16) {
             setSty({ backgroundColor: "#895881" });
-            setP("Tracking & Organization");
+            setP("Business Model & Scalability");
             setItem([
-                "Do you have systems in place to keep your job search organized?",
-                "Do you regularly evaluate your progress in the job search and make necessary adjustments?",
-                "Have you found useful tools or resources to track your applications and networking efforts?"
+                "Is your business model designed for long-term scalability and growth?",
+                "Have you identified operational bottlenecks that may hinder scaling?",
+                "Do you regularly evaluate and refine your business model based on market changes?"
             ])
 
 
@@ -159,11 +159,11 @@ const confirmFuture = (e) => {
 
          if (counter === 16 && counter < 18) {
             setSty({ backgroundColor: "#ff5733" });
-            setP("Staying Energized, Persistent & Mentally Strong");
+            setP("Customer Experience & Retention");
             setItem([
-                "Do you have practices in place to maintain motivation and resilience during your job search?",
-                "Have you found effective techniques to manage stress and uncertainty during the process?",
-                "Do you prioritize self-care while balancing your job search with other responsibilities?"
+                "Do you have a structured process for gathering and acting on customer feedback?",
+                "Are you actively nurturing relationships with existing customers to increase retention?",
+                "Have you identified ways to turn satisfied customers into brand advocates?"
             ])
         } 
 
@@ -173,11 +173,11 @@ const confirmFuture = (e) => {
 
          if (counter === 18 && counter < 20) {
             setSty({ backgroundColor: "#58261b" });
-            setP("Mastery of Interview Preparation & Negotiation");
+            setP("Mental Resilience & Founder Burnout Risk");
             setItem([
-                "Do you prepare effectively for interviews to convey your value to potential employers?",
-                'Have you practiced negotiation skills and feel comfortable negotiating your worth?',
-                "Have you learned valuable lessons from past interview experiences that shape your current approach?"
+                "Do you have habits or routines that help you manage stress and prevent burnout?",
+                "Are you balancing work demands with personal well-being and recovery time?",
+                "Have you built a support system to navigate the emotional challenges of entrepreneurship?"
             ])
         }
         
@@ -216,67 +216,67 @@ const confirmFuture = (e) => {
                      {counter <= 20 && (   <header style={style}> {p}  </header> )}
                 <div className="section">
                 {counter === 1 && (
-                <Career question="How well do you understand your strengths, values, and career goals?" />
+                <Career question="How clear and strategic is your vision for the business, and do you have a solid plan for execution?" />
 
             )}
            
                 {counter === 2 && (
-                <Career question="How well do you want to understand your strengths, values, and career goals in the next" select={selected}/>
+                <Career question="How clear and strategic do you want your vision to be for the business, and do you have a solid plan for execution in the next" select={selected}/>
             )}
 
         {counter === 3 && (
-                <Career question=  "How effectively do you research companies, roles, and industry trends relevant to your career?" />
+                <Career question=  "How well does your product or service solve a real, urgent problem for a defined audience, with strong validation from paying customers?" />
             )}
         {counter === 4 && (
-                <Career question= "How effectively do you want to research companies, roles, and industry trends relevant to your career in the next" select={selected}/>
+                <Career question= "How well do you want your product or service solve a real, urgent problem for a defined audience, with strong validation from paying customersin the next" select={selected}/>
             )}
         {counter === 5 && (
-                <Career question="How confident are you in the quality and impact of your resume and LinkedIn profile?" />
+                <Career question="How stable and sustainable is your revenue, ensuring your business runs without relying on personal savings?" />
             )}
         {counter === 6 && (
-                <Career question={`How confidential do you want to be in the quality and impact of your resume and LinkedIn profile in the next`} select={selected}/>
+                <Career question={`How stable and sustainable do you want your revenue, ensuring your business runs without relying on personal savings in the next`} select={selected}/>
             )}
         {counter === 7 && (
-                <Career question= "How strong and effective is your professional network in supporting your job search?" />
+                <Career question= "“How predictable and effective is your system for generating leads and converting them into paying customers?" />
             )}
         {counter === 8 && (
-                <Career question= "How strong and effective do you want your professional network to be in supporting your job search in the next" select={selected}/>
+                <Career question= "“How predictable and effective do you want your system for generating leads and converting them into paying customers in the next" select={selected}/>
             )}
         {counter === 9 && (
-                <Career question= "How well do you showcase your expertise and build your personal brand in your field?" />
+                <Career question= "How well does your brand stand out, making it the obvious choice in your market rather than just another option?" />
             )}
         {counter === 10 && (
-                <Career question={`How well do you want to showcase your expertise and build your personal brand in your field in the next`} select={selected} />
+                <Career question={`How well do you want your brand stand out, making it the obvious choice in your market rather than just another option in the next`} select={selected} />
             )}
          {counter === 11 && (
-                <Career question="How proactive are you in acquiring new skills and certifications that align with your career objectives?" />
+                <Career question="How efficiently are you balancing strategic growth activities versus being stuck in daily operational tasks?" />
             )}
         {counter === 12 && (
-                <Career question="How proactive do you want to be in acquiring new skills and certifications that align with your career objectives in the next" select={selected} />
+                <Career question="How efficiently do you want your balancing strategic growth activities versus being stuck in daily operational tasks in the next" select={selected} />
             )}
         {counter === 13 && (
-                <Career question="How consistent and strategic are you in submitting job applications for roles you are qualified for?" />
+                <Career question="How well are you leveraging mentors, collaborators, and industry connections to accelerate business growth?" />
             )}
         {counter === 14 && (
-                <Career question="How consistent and strategic do you want to be in submitting job applications for roles you are qualified for in the next" select={selected} />
+                <Career question="How well do you want your leveraging mentors, collaborators, and industry connections to accelerate business growth in the next" select={selected} />
             )}
         {counter === 15 && (
-                <Career question= "How organized and efficient are you in managing and tracking your job search activities?" />
+                <Career question= "How sustainable and scalable is your business model, ensuring growth leads to more profits rather than more problems?" />
             )}
         {counter === 16 && (
-                <Career question= "How organized and efficient do you want to be in managing and tracking your job search activities in the next" select={selected} />
+                <Career question= "How sustainable and scalable do you want your business model, ensuring growth leads to more profits rather than more problems in the next" select={selected} />
             )}
         {counter === 17 && (
-                <Career question="How well do you maintain your energy, persistence, and mental resilience during your job search?" />
+                <Career question="How strong is your ability to retain customers, generate repeat sales, and benefit from word-of-mouth referrals?" />
             )}
          {counter === 18 && (
-                <Career question="How well do you maintain your energy, persistence, and mental resilience during your job search in the next" select={selected}/>
+                <Career question="How strong do you want your ability to retain customers, generate repeat sales, and benefit from word-of-mouth referrals in the next" select={selected}/>
             )}
          {counter === 19 && (
-                <Career question= "How prepared and confident are you in your interview performance and negotiation skills?" />
+                <Career question= "How resilient are you in managing stress, maintaining motivation, and avoiding burnout while leading your business?" />
             )}
          {counter === 20 && (
-                <Career question= "How prepared and confident do you want to be in your interview performance and negotiation skills in the next" select={selected}/>
+                <Career question= "How resilient do you want to be in managing stress, maintaining motivation, and avoiding burnout while leading your business in the next" select={selected}/>
             )}
           
  

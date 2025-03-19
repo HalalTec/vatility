@@ -254,7 +254,7 @@ const decodedCategories = decodeCategoriesFromUrl(window.location.href);
             <h1 style={{textAlign:"center"}}>Your Results</h1>
             <div className="mean">
                          <div className='range'>
-                        <h2> Your Wheel of Life score:</h2>
+                        <h2> Your Job Search Wheel Score:</h2>
                         <p>0% <input id="range" type="range" min="0" max="100" value={((mean_percent + balance)/2).toFixed(2)} /> 100%
                         <p style={styleIt}> {((mean_percent + balance)/2).toFixed(2)}% </p>
                         </p>

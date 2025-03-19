@@ -10,219 +10,215 @@ const Network = ({close, msg, submit, quest}) => {
         {
           score: 1,
           indication: [
-            'No current networking contacts.',
-            'Avoids networking events and opportunities.',
-            'Feels anxious or uncomfortable in social settings.'
+            'No active network or partnerships.',
+            'No strategic alliances in place.',
+            'No access to mentors or advisors.'
           ],
           reflectiveQuestions: [
-            'How often do you reach out to others in your industry?',
-            'What fears hold you back from networking?',
-            'Do you feel isolated in your job search?'
+            'Do I lack business connections that could help me grow?',
+            'Am I struggling to find partners or collaborators?',
+            'Do I feel isolated in my entrepreneurial journey?'
           ],
           aspiIndication: [
-            ' I have very little to no network within my field.',
-            'I have minimal to no understanding of how to approach networking.',
-            'I rarely attend networking events.'
+            'You have little to no business connections outside your immediate contacts.',
+            'You do not actively engage in networking, collaborations, or partnerships.',
+            'Your business growth is mostly dependent on personal effort, with no external leverage.'
           ],
           futureQuestions: [
-                'Do I feel disconnected from others in my industry or job field?',
-                'Have I taken steps to reach out to people in my network?'
+                'Have you taken any steps to connect with potential partners or mentors in the defined timeframe?',
+                'Do you rely solely on personal effort with no outside collaborations?',
+                'Have you attended any networking events or reached out to business communities?'
             ]
         },
         {
             score: 2,
           indication: [
-                    ' Limited connections; few people to reach out to.',
-                        'Occasionally attends events but does not engage.',
-                        'Networking feels forced or unnatural.'
+                    'Few connections but no meaningful collaboration.',
+                    'No partnerships yielding tangible results.'
           ],
           reflectiveQuestions: [
-            'How many new contacts have you made in the last month?',
-            'What specific barriers prevent you from networking more effectively?',
-            'Do you feel prepared when attending networking events?',
+            'Do I know a few people, but they don’t contribute to my growth?',
+            'Have I failed to leverage any of my contacts for business success?',
           ],
           aspiIndication: [
-                "I have a few industry contacts, but I don't consistently engage with them.",
-                'I rarely initiate networking opportunities.',
-                'I struggle to communicate my value.'
+                'You have a few connections but they are not strategically beneficial.',
+                'There is little to no collaboration or active efforts to build leverage through partnerships.',
+                'Business growth still largely depends on you alone.'
           ],
           futureQuestions: [
-                                'Do I only network when absolutely necessary?',
-                                'Am I hesitant to make new professional connections?'
+                                'Have you identified potential networking opportunities that could support your business?',
+                                'Are your current business relationships helping you grow in any meaningful way?',
+                                'Have you actively tried to form partnerships in the defined timeframe?'
           ]
         },  
 
         {
             score: 3,
             indication: [
-                'Some contacts but lack depth in relationships.',
-                'Attends events but rarely follows up with connections.',
-                'Networking efforts yield minimal results.'
+                'Some networking efforts but inconsistent.',
+                'No structured approach to leveraging connections.'
             ],
             reflectiveQuestions: [
-                'How often do you follow up with new contacts?',
-                'What strategies do you use to maintain relationships?',
-                'Are you clear on what you want from your networking efforts?'
+                'Do I attend events or interact occasionally but without strategic intent?',
+                'Am I failing to follow up or build deeper relationships?'
             ],
             aspiIndication: [
-                    'I occasionally attend networking events or online groups.',
-                    "My network consists of some acquaintances, but it's not diverse or strong.",
-                    'I sometimes reach out to people.'
+                    'You have some networking connections but rarely engage them.',
+                    'You may have one or two small partnerships, but they are not significantly contributing to growth.',
+                    'You sometimes attend networking events but do not follow up on connections.'
             ],
             futureQuestions: [
-                'Do I have a small circle of contacts in my industry, but struggle to expand it?',
-                'How confident do I feel when making professional connections?'
+                'Have you built at least one meaningful partnership that is adding value to your business?',
+                'Do you regularly interact with your business network for opportunities?',
+                'Have you made a habit of following up with potential partners after networking?'
+
             ]
         },
 
         {
             score: 4,
             indication: [
-                'A few meaningful connections but limited engagement.',
-                'Participates in some networking activities but lacks consistency.',
-                'Networking feels somewhat beneficial but not impactful.'
+                'Building relationships but limited impact.',
+                'Partnerships exist but don’t contribute significantly to business success.'
             ],
             reflectiveQuestions: [
-                'How do you prioritize your networking activities?',
-                'What do you hope to achieve through networking?',
-                'Are there specific groups or events that resonate with you?'
+                'Have I connected with potential partners but seen little growth?',
+                'Are my collaborations more about networking than tangible benefits?'
             ],
             aspiIndication: [
-                "I have a basic network, but it's often limited to past colleagues or old acquaintances.",
-                "I don't actively nurture relationships."
+                'You have started forming strategic connections but they are not yet deeply impactful.',
+                'You have tested a few partnerships, but they are still in early stages.',
+                'Your network is growing, but you are not fully leveraging it for business expansion.'
             ],
             futureQuestions: [
-                'Have I attended at least one networking event in the past few months?',
-                "How often do I reach out to strengthen my current professional network?"
+                'Have you taken action to strengthen relationships with key business contacts?',
+                'Are you exploring at least one new partnership that could help scale your business?',
+                'Are you getting referrals or opportunities from your network in the defined timeframe?'
             ]
         },
         {
             score: 5,
             indication: [
-                'Moderate number of contacts; some are useful.',
-                'Attends events regularly but feels unsure about effectiveness.',
-                'Networking is a mixed experience, neither positive nor negative.'
+                'A basic network with some strategic connections.',
+                'Some partnerships generating early benefits.'
             ],
             reflectiveQuestions: [
-                ' How satisfied are you with your current network?',
-                'What would improve your networking experience?',
-                'Do you actively seek out new opportunities to connect?'
+                'Do I have some industry contacts that provide occasional value?',
+                'Have any of my collaborations started yielding results?'
             ],
             aspiIndication: [
-                ' I maintain a moderate network, with occasional interactions.',
-                'I reach out for advice or referrals sporadically.',
-                'I engage in a few relevant groups.'                
+                'You have a growing professional network and engage with it occasionally.',
+                'You have a few partnerships that contribute to growth, though not at scale.',
+                'You are starting to experience benefits from networking efforts but still have room for improvement.'                
             ],
             futureQuestions: [
-                'How often do I make an effort to connect with people outside of my immediate circle?',
-                'Do I actively seek opportunities to collaborate?'
+                'Are at least some of your partnerships yielding measurable results for your business?',
+                'Have you reached out to at least three new potential collaborators or mentors?',
+                'Do you feel your network is providing valuable insights and opportunities?'
             ]
         },
         {
             score: 6,
             indication: [
-                ' Good number of contacts; some relationships are developing.',
-                'Engages in follow-ups after events, though inconsistently.',
-                'Feels more comfortable in networking situations than before.'
+                'Growing network with valuable business relationships.',
+                'At least one strong partnership leading to measurable progress.'
             ],
             reflectiveQuestions: [
-                'How often do you initiate conversations with your contacts?',
-                'What types of events do you find most valuable?',
-                'Are there areas where you can improve your networking skills?'
+                'Am I actively engaging with professionals who contribute to my growth?',
+                'Do I have partnerships that generate new business or knowledge?'
             ],
             aspiIndication: [
-                'My network is more established, with people I engage with regularly.',
-                'I attend networking events and follow up with connections.'
+                ' You have a strong network and engage with it regularly.',
+                'You have formed strategic partnerships that are actively contributing to business growth.',
+                'Your network recognizes your business and provides opportunities.'
             ],
             futureQuestions: [
-                'Am I able to connect with new people with ease during events?',
-                'How often do I follow up after meeting new professional contacts?'
+                'Are you seeing tangible revenue or growth benefits from your partnerships?',
+                'Are people in your network introducing you to valuable opportunities?',
+                'Do you proactively maintain and deepen relationships with key connections?'
             ]
         },
         {
             score: 7,
             indication: [
-                'Stronger network with several active relationships.',
-                'Regularly attends and participates in networking events.',
-                'Feels confident in initiating conversations and following up.'
+                'Multiple strong partnerships delivering consistent value.',
+                'Good engagement in networking communities and industry groups.'
             ],
             reflectiveQuestions: [
-                'What strategies have worked best for building connections?',
-                'How do you leverage your network for job opportunities?',
-                "Are there specific skills you'd like to develop further?"
+                'Do my business relationships help me gain clients, knowledge, or growth?',
+                'Am I part of any groups where I contribute and gain insights?'
             ],
             aspiIndication: [
-                    ' I regularly interact with my network through social media, events, and email.',
-                    'I can approach others confidently for collaborations or advice.',
-                    'I stay visible in my field.'
+                    'Your network includes industry influencers and decision-makers.',
+                    'You have multiple active partnerships that significantly contribute to your business growth.',
+                    'Your business is benefiting from referrals, collaborations, and joint ventures.', 
             ],
             futureQuestions: [
-                'Do I consistently engage with both new and existing contacts in a meaningful way?',
-                'Am I proactive in growing my professional relationships?'
+                'Are you leveraging your partnerships to unlock new markets or opportunities?',
+                'Are you being invited to exclusive business circles, masterminds, or events?',
+                'Are people actively seeking to partner with you due to your reputation?'
             ]
         }, {
             score: 8,
             indication: [
-                'Well-established network; many meaningful connections.',
-                'Proactively engages and supports others in their networks.',
-                ' Networking is a key part of job search strategy and success.'
+                'Strong ecosystem of mentors, partners, and collaborators.',
+                'Strategic partnerships fueling growth opportunities.'
             ],
             reflectiveQuestions: [
-                'How do you maintain and nurture your relationships over time?',
-                'What role does reciprocity play in your networking efforts?',
-                "Are there new areas of growth you're exploring through your network?"
+                'Do I have a network that supports my business regularly?',
+                'Are my partnerships aligned with my business objectives?'
             ],
             aspiIndication: [
-                'I have a well-established network and regularly contribute to it.',
-                'I proactively support others in their career paths.',
-                "I'm known for offering value."
+                'You are known as a valuable connection within your industry.',
+                'Your partnerships bring in significant business, helping you scale.',
+                'Your network regularly provides high-quality opportunities.',
             ],
             futureQuestions: [
-                'How often do I offer help, guidance, or advice to those in my network?',
-                'Do I feel that my network is diverse and strong across industries?'
+                'Are you in high-demand as a partner or collaborator?',
+                'Are your existing partnerships contributing significantly to your bottom line?',
+                'Have you built a system to continuously expand and maintain your network?'
             ]
         },
         {
             score: 9,
             indication: [
-                'Extensive network with strong, reciprocal relationships.',
-                'Actively mentors others and shares opportunities within the network.',
-                'Networking leads to significant job search benefits and insights.'
+                'Well-established partnerships driving exponential growth.',
+                'Consistently leveraging networks for scaling opportunities.'
             ],
             reflectiveQuestions: [
-                'How do you contribute to the success of others in your network?',
-                "What are the most valuable lessons you've learned from networking?",
-                'Are there ways to expand or deepen your current connections further?'
+                'Are my partnerships a key reason for my business success?',
+                'Do I have a systematic way of expanding my network and partnerships?'
             ],
             aspiIndication: [
-                'I actively expand my network by attending multiple industry events and connecting with top professionals.',
-                'I can leverage my network to gain job opportunities.'
+                'Your network is a major competitive advantage.',
+                'You have multiple high-impact partnerships that fuel exponential growth.',
+                'People and businesses seek you out for strategic collaborations.',
             ],
             futureQuestions: [
-                'Do I continuously seek new ways to expand my network with key industry influencers?',
-                'How comfortable am I reaching out to senior professionals in my field?'
+                'Are your partnerships creating significant, measurable business growth?',
+                'Do you have strong, ongoing collaborations with industry leaders?',
+                'Do you feel that your network and partnerships give you leverage in business decisions?'
             ]
         },
         {
             score: 10,
             indication: [
-                'Highly influential network; many advocates and supporters.',
-                'Regularly invited to exclusive events and opportunities due to reputation.',
-                'Networking is second nature, integrated into daily life and career strategy.'
+                'A thriving network with high-impact collaborations.',
+                'Strategic alliances consistently unlocking new opportunities.'
             ],
             reflectiveQuestions: [
-                'What practices have led to such a successful network for you?',
-                'How do you continually add value to your connections?',
-                'What future goals do you have for expanding or enhancing your network even further?'
+                'Do I have an influential presence in my industry because of my network?',
+                'Are my partnerships a competitive advantage in my business?'
             ],
             aspiIndication: [
-                'I am a highly visible, well-connected professional in my field.',
-                'My network is vast, and I actively engage with influential individuals to create opportunities.',
-                'I am considered a connector within my industry.'
+                'You are a go-to person in your industry for partnerships and connections.',
+                'Your business thrives on strategic collaborations, referrals, and exclusive opportunities.',
+                'You have built an ecosystem where partnerships drive continuous success.', 
             ],
             futureQuestions: [
-                'Am I ready to fully commit to living a life where every action and decision is deeply connected to my inner growth in the defined timeframe?',
-                'Do I believe that I can reach a state of profound inner peace and fulfillment and sustain it?'
+                'Are you considered an authority or connector in your industry?',
+                'Are your strategic relationships consistently generating massive growth and expansion?',
+                'Have you built a self-sustaining network that fuels ongoing success?'
             ]
         },
         {
@@ -265,7 +261,6 @@ const Network = ({close, msg, submit, quest}) => {
                     <ul style={{textAlign:"left"}}>
                     <li style={{listStyle:"disc"}}> {categories[currentIndex].reflectiveQuestions[0]}</li>
                     <li style={{listStyle:"disc"}}> {categories[currentIndex].reflectiveQuestions[1]}</li>
-                    <li style={{listStyle:"disc"}}> {categories[currentIndex].reflectiveQuestions[2]}</li>
                     </ul>
                     <div className="ref-button">
                     <button onClick={prevSlide} className=" prev" style={{marginTop:"0px"}}><img src={back}  /></button> <button  id="myButton" onClick={submit} >{currentIndex+1}</button>
