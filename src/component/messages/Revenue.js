@@ -228,20 +228,7 @@ const Revenue = ({close, msg, submit, quest}) => {
             "Will my business be financially independent, allowing me to focus purely on vision and growth in the defined timeframe?",
             "Do I have long-term financial sustainability secured?"
           ]
-        },
-      
-        {
-            score: 10,
-            indication: 'Exceptional spiritual connection, profound inner peace, complete alignment with purpose, deeply fulfilling spiritual practices, strong sense of transcendence.',
-            reflectiveQuestions: [
-                'Do you feel a profound, unbreakable connection to your spirituality and purpose?',
-                'Are you consistently at peace, with a deep sense of fulfillment and clarity?',
-                'Does your spirituality define and elevate your daily life?'
-
-
-            ]
         }
-
       ];
 
       const nextSlide = () => {
