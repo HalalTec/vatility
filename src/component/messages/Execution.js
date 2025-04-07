@@ -237,19 +237,7 @@ const Execution = ({close, msg, submit, quest}) => {
             "Do I feel in control, working almost entirely on high-level strategy?",
             "Does my business run efficiently, even without my direct involvement?"
             ]
-          },
-      
-        {
-            score: 10,
-            indication: 'Exceptional spiritual connection, profound inner peace, complete alignment with purpose, deeply fulfilling spiritual practices, strong sense of transcendence.',
-            reflectiveQuestions: [
-                'Do you feel a profound, unbreakable connection to your spirituality and purpose?',
-                'Are you consistently at peace, with a deep sense of fulfillment and clarity?',
-                'Does your spirituality define and elevate your daily life?'
-
-
-            ]
-        }
+          }
 
       ];
 
