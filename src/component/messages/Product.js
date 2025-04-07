@@ -216,19 +216,7 @@ const Product = ({close, msg, submit, quest}) => {
                 'Have I built a self-sustaining business model where demand exceeds supply?', 
                 'Are my customers consistently advocating for my product/service on their own?'
             ]
-        },
-        {
-            score: 10,
-            indication: 'Exceptional spiritual connection, profound inner peace, complete alignment with purpose, deeply fulfilling spiritual practices, strong sense of transcendence.',
-            reflectiveQuestions: [
-                'Do you feel a profound, unbreakable connection to your spirituality and purpose?',
-                'Are you consistently at peace, with a deep sense of fulfillment and clarity?',
-                'Does your spirituality define and elevate your daily life?'
-
-
-            ]
         }
-
       ];
 
       const nextSlide = () => {
