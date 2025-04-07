@@ -234,20 +234,7 @@ const Lead = ({close, msg, submit, quest}) => {
               "Do I already have a fully optimized and scalable sales engine?",
               "In the defined timeframe, do I expect to dominate my market with an outstanding lead generation and sales system?"
             ]
-          },
-      
-        {
-            score: 10,
-            indication: 'Exceptional spiritual connection, profound inner peace, complete alignment with purpose, deeply fulfilling spiritual practices, strong sense of transcendence.',
-            reflectiveQuestions: [
-                'Do you feel a profound, unbreakable connection to your spirituality and purpose?',
-                'Are you consistently at peace, with a deep sense of fulfillment and clarity?',
-                'Does your spirituality define and elevate your daily life?'
-
-
-            ]
-        }
-
+          }
       ];
 
       const nextSlide = () => {
